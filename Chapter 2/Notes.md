@@ -12,3 +12,8 @@ so that a backslash is a backslash.
 
 • Interpolated string: A literal string prefixed with $ to enable embedded
 formatted variables. You will learn more about this later in this chapter.
+
+#### Numbers
+
+Humans use base 10 numbering system whereas computers use base 2 (zero and one) numbering system. 
+
