@@ -61,3 +61,15 @@ thrown, which results in an error. You should check for a null value before usin
 nullable variable.
 
 null-coalescing operator ?? can be used to assign a new value if the variable is currently `null`.
+
+#### Format strings
+
+The full syntax of a format item is:
+{ index [, alignment ] [ : formatString ] }
+
+Alignment values are integers. Positive integers are right-aligned and
+negative integers are left-aligned.
+
+C format string means currency.
+
+page 98 key input from users...
