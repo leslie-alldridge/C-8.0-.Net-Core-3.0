@@ -32,4 +32,32 @@ Use `int` for whole numbers, `double` for real numbers that won't be compared an
 
 double also has some special values like `double.NaN` `Epsilon` and `Infinity`
 
-page 83...
+#### Dyanmic types
+
+There is another special type named dynamic that can also store any type of data, but
+even more than object, its flexibility comes at the cost of performance.
+
+Local variables only exist during execution of a method while reference types must wait for a garbage collection.
+
+`var` keyword is good to use when the type is obvious
+
+#### Default values
+
+Most of the primitive types except `string` are `value types`, which means that they must have a value. A default value can be set using `default()`. 
+
+Null is the default for all reference types. String is a reference type.
+
+To enable the feature at the project level, add the following to your project file:
+
+```
+<PropertyGroup>
+    <Nullable>enable</Nullable>
+</PropertyGroup>
+```
+
+Checking whether a nullable reference type or nullable value type variable currently
+contains null is important because if you do not, a NullReferenceException can be
+thrown, which results in an error. You should check for a null value before using a
+nullable variable.
+
+Page 93..
