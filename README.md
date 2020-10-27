@@ -10,4 +10,4 @@ C# 8.0 &amp; .Net Core 3.0
     - [NullHandling](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%202/NullHandling)
     - [Numbers](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%202/Numbers)
     - [Variables](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%202/Variables)
-    - [Formatting]()
+    - [Formatting](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%202/Formatting)
