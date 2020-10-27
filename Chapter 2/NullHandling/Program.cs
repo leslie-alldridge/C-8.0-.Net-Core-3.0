@@ -30,6 +30,12 @@ namespace NullHandling
             address.Street = null;
             address.City = "London";
             address.Region = null;
+
+            if (thisCouldBeNull != null)
+            {
+                int? street = address.Street?.Length ?? 3;
+                Console.WriteLine($"street length is {street}");
+            }
         }
     }
 }
