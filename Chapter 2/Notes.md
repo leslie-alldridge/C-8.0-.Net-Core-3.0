@@ -1,6 +1,7 @@
 Keywords such as **string** that look like types are aliases, which represent types provided by the platform on which C# runs.
 
 Casing:
+
 - camelCase for local variables and private fields
 - TitleCase for non-private fields and methods
 
@@ -10,12 +11,12 @@ escape characters like \t for tab.
 • Verbatim string: A literal string prefixed with @ to disable escape characters
 so that a backslash is a backslash.
 
-• Interpolated string: A literal string prefixed with $ to enable embedded
+• Interpolated string: A literal string prefixed with \$ to enable embedded
 formatted variables. You will learn more about this later in this chapter.
 
 #### Numbers
 
-Humans use base 10 numbering system whereas computers use base 2 (zero and one) numbering system. 
+Humans use base 10 numbering system whereas computers use base 2 (zero and one) numbering system.
 
 C# has an operator named `sizeof()` that returns the number of bytes that a type uses in memory.
 
@@ -28,7 +29,7 @@ shifts the decimal point. For example, 0.1 is stored as 1, with a note to shift 
 decimal point one place to the left. 12.75 is stored as 1275, with a note to shift the
 decimal point two places to the left.
 
-Use `int` for whole numbers, `double` for real numbers that won't be compared and `decimal` for money, engineering, and other places requiring accuracy. 
+Use `int` for whole numbers, `double` for real numbers that won't be compared and `decimal` for money, engineering, and other places requiring accuracy.
 
 double also has some special values like `double.NaN` `Epsilon` and `Infinity`
 
@@ -43,7 +44,7 @@ Local variables only exist during execution of a method while reference types mu
 
 #### Default values
 
-Most of the primitive types except `string` are `value types`, which means that they must have a value. A default value can be set using `default()`. 
+Most of the primitive types except `string` are `value types`, which means that they must have a value. A default value can be set using `default()`.
 
 Null is the default for all reference types. String is a reference type.
 
@@ -71,5 +72,3 @@ Alignment values are integers. Positive integers are right-aligned and
 negative integers are left-aligned.
 
 C format string means currency.
-
-page 98 key input from users...
