@@ -39,8 +39,15 @@ namespace Arguments
                 ignoreCase: true
             );
 
-            WindowHeight = int.Parse(height);
-            WindowWidth = int.Parse(width);
+            try
+            {
+                WindowHeight = int.Parse(height);
+                WindowWidth = int.Parse(width);
+            }
+            catch (PlatformNotSupportedException)
+            {
+                WriteLine("The current platform does not support changing the size of a console window.");
+            }
         }
     }
 }

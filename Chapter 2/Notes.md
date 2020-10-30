@@ -72,3 +72,18 @@ Alignment values are integers. Positive integers are right-aligned and
 negative integers are left-aligned.
 
 C format string means currency.
+
+#### Exercise 2.1
+
+What type would you choose for the following numbers?
+
+1. Phone Number - string (non calculative field)
+2. Height - decimal or double, depends on comparison requirements
+3. Age - integer
+4. Salary - decimal
+5. ISBN - integer
+6. Price - decimal
+7. Weight - double
+8. Population - integer
+9. Stars - decimal
+10. Employees - integer
