@@ -1,5 +1,6 @@
 ﻿using System;
 using static System.Console;
+using System.IO;
 
 namespace LogicalOperators
 {
@@ -70,6 +71,99 @@ namespace LogicalOperators
             {
                 WriteLine("There is at least one argument");
             }
+
+            // Pattern matching with if statements
+
+            object o = 3;
+            int l = 4;
+
+            if (o is int m)
+            {
+                WriteLine($"{m} x {l} = {m * l}");
+            }
+            else
+            {
+                WriteLine("o is not an int so it cannot multiply!");
+            }
+
+        // Switch statements
+
+        /*
+        You can use the goto keyword to jump to another
+        case or a label. The goto keyword is frowned upon by most
+        programmers but can be a good solution to code logic in some
+        scenarios. However, you should use it sparingly.
+        */
+
+        A_label:
+            var number = (new Random()).Next(1, 7);
+            WriteLine($"My random number is {number}");
+
+            switch (number)
+            {
+                case 1:
+                    WriteLine("one");
+                    break;
+                case 2:
+                    WriteLine("two");
+                    goto case 1;
+                case 3:
+                case 4:
+                    WriteLine("three or four");
+                    goto case 1;
+                case 5:
+                    // go to sleep for half a second
+                    System.Threading.Thread.Sleep(500);
+                    goto A_label;
+                default:
+                    WriteLine("Default");
+                    break;
+            }
+
+            string path = @"C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3";
+
+            Stream s = File.Open(Path.Combine(path, "file.txt"), FileMode.OpenOrCreate);
+
+            string message = string.Empty;
+
+            switch (s)
+            {
+                case FileStream writeableFile when s.CanWrite:
+                    message = "The stream is a file that I can write to.";
+                    break;
+                case FileStream readOnlyFile:
+                    message = "The stream is a read-only file..";
+                    break;
+                case MemoryStream ms:
+                    message = "The stream is a memory address";
+                    break;
+                default:
+                    message = "The stream is some other type.";
+                    break;
+                case null:
+                    message = "The stream is null";
+                    break;
+            }
+
+            WriteLine(message);
+
+            // Switch expression format
+
+            string message2 = s switch
+            {
+                FileStream writeableFile when s.CanWrite
+                    => "The stream is a file that I can write to.",
+                FileStream readOnlyFile
+                    => "The stream is a read-only file.",
+                MemoryStream ms
+                    => "The stream is a memory address.",
+                null
+                => "The stream is null.",
+                _
+                => "The stream is some other type."
+            };
+            WriteLine(message2);
+
         }
 
         private static bool DoStuff()

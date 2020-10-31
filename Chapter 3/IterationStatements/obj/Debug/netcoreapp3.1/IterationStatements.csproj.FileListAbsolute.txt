@@ -1,0 +1,13 @@
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\bin\Debug\netcoreapp3.1\IterationStatements.exe
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\bin\Debug\netcoreapp3.1\IterationStatements.deps.json
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\bin\Debug\netcoreapp3.1\IterationStatements.runtimeconfig.json
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\bin\Debug\netcoreapp3.1\IterationStatements.runtimeconfig.dev.json
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\bin\Debug\netcoreapp3.1\IterationStatements.dll
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\bin\Debug\netcoreapp3.1\IterationStatements.pdb
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\obj\Debug\netcoreapp3.1\IterationStatements.csprojAssemblyReference.cache
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\obj\Debug\netcoreapp3.1\IterationStatements.csproj.CoreCompileInputs.cache
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\obj\Debug\netcoreapp3.1\IterationStatements.AssemblyInfoInputs.cache
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\obj\Debug\netcoreapp3.1\IterationStatements.AssemblyInfo.cs
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\obj\Debug\netcoreapp3.1\IterationStatements.dll
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\obj\Debug\netcoreapp3.1\IterationStatements.pdb
+C:\Users\Beast\Desktop\C-8.0-.Net-Core-3.0\Chapter 3\IterationStatements\obj\Debug\netcoreapp3.1\IterationStatements.genruntimeconfig.cache

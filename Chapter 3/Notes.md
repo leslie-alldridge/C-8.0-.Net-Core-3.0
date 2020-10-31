@@ -46,3 +46,14 @@ CPUs can perform a bit-shift faster
 `()` is called the invocation operator
 
 The two selection statements in C# are `if` and `switch`. 
+
+Just because you can leave out the curly braces in if statements, doesn't mean you should. Your code
+is not "more efficient" without them; instead, it is less maintainable and potentially
+more dangerous.
+
+Pattern Matching:
+
+is tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type
+
+Additionally, case statements can include a when keyword to perform more specific
+pattern matching
