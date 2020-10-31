@@ -104,3 +104,5 @@ Parsing from string to numbers or dates and times:
 - Problem with parsing is that when unsuccessful it errors
 
 Avoid writing code that will throw an exception whenever possible, perhaps by performing if statement checks, but sometimes you can't. In those scenarios, you could catch the exception and handle it in a better way than the default behavior.
+
+page 134..
