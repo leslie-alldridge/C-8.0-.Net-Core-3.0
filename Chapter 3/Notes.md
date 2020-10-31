@@ -72,3 +72,5 @@ There are interfaces named `IEnumerable` and `IEnumerable<T>` that formally defi
 interfaces.
 
 Current value available during iteration is read only.
+
+up to page ... 125
