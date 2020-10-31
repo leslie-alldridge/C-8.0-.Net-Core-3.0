@@ -73,4 +73,34 @@ interfaces.
 
 Current value available during iteration is read only.
 
-up to page ... 125
+#### Cast and Convert
+
+You cannot implicitly cast a double variable into an int variable because it is potentially unsafe and could lose data.
+
+One difference between casting and converting (using System.Convert) is that converting rounds the double value 9.8 up to 10 instead of trimming the part after the decimal point.
+
+We have shown that the rule for rounding in C# is subtly different from the primary school rule:
+
+• It always rounds down if the decimal part is less than the midpoint .5.
+• It always rounds up if the decimal part is more than the midpoint .5.
+• It will round up if the decimal part is the midpoint .5 and the non-decimal part is odd, but it will round down if the non-decimal part is even.
+
+This rule is known as `Banker's Rounding`, and it is preferred because it reduces bias by alternating when it rounds up or down.
+
+You can take control of rounding rules using the Math.Round method.
+
+MidpointRounding.AwayFromZero is the primary school rule.
+
+#### Converting to String
+
+The `ToString` method converts the current value of any variable into a textual
+representation. Some types can't be sensibly represented as text, so they return their namespace and type name.
+
+Transporting images or video: The safest thing to do is to convert the binary object into a string of safe characters. Programmers call this `Base64` encoding.
+
+Parsing from string to numbers or dates and times:
+- Only a few types have a Parse method, including all the number types and DateTime.
+- You can use format codes such as `D` to output only the date part using long date format
+- Problem with parsing is that when unsuccessful it errors
+
+Avoid writing code that will throw an exception whenever possible, perhaps by performing if statement checks, but sometimes you can't. In those scenarios, you could catch the exception and handle it in a better way than the default behavior.
