@@ -137,6 +137,32 @@ required? Starting point, condition and limit.
 10. What interface must an object implement to be enumerated over by using
 the foreach statement? System.Collections.Generic.IEnumberable<T>
 
-Exercise 3.2
+**Exercise 3.2**
 
 The code creates an endless loop as the byte overflows and restarts from its min value. Because a byte won't exceed 500 the loop never ends. To prevent this I've wrapped it in a `checked` statement so an OverflowException occurs.
+
+**Exercises 3.3 and 3.4** are in the FizzBuzz directory.
+
+**Exercise 3.5**
+
+What are the values of x and y after the following statements execute?
+``` 
+x = 3;
+y = 2 + ++x;
+
+y = 6 and x = 4
+```
+--
+```
+x = 3 << 2;  here we double the number twice, 3, 6, 12
+y = 10 >> 1; here we halve the number once. 100 >> 5 is 3. 100, 50, 25, 12, 6, 3
+
+x = 12 and y = 5
+```
+--
+```
+x = 10 & 8;  takes the lowest bit number 1010 vs 1000, 1000 wins so it's eight
+y = 10 | 7;  takes the highest combination of bits, 1010 and 1111, so it's 1111 = 15
+
+x = 8 and y = 15
+```
