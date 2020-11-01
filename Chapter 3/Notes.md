@@ -51,6 +51,8 @@ Additionally, case statements can include a when keyword to perform more specifi
 
 #### For statement
 
+In all variants of C a for is comprised of three parts: initialization, condition and update
+
 The for statement is like while, except that it is more succinct. It combines:
 
 • An initializer expression, which executes once at the start of the loop.
@@ -58,6 +60,8 @@ The for statement is like while, except that it is more succinct. It combines:
 of the loop to check whether the looping should continue.
 • An iterator expression, which that executes on every loop at the bottom of
 the statement.
+
+It's not mandatory to set any of these, you can even do for( ; ; ) ;, that would create an infinite loop.
 
 #### How foreach works behind the scenes
 
@@ -105,4 +109,34 @@ Parsing from string to numbers or dates and times:
 
 Avoid writing code that will throw an exception whenever possible, perhaps by performing if statement checks, but sometimes you can't. In those scenarios, you could catch the exception and handle it in a better way than the default behavior.
 
-page 134..
+
+#### Exceptions
+
+The order in which you catch exceptions is important. The correct order is related to the inheritance hierarchy of the exception types. If you place exceptions in the wrong order you will see an error at compile time.
+
+To capture any exception you can use `System.Exception`
+
+Overflow exceptions:
+The `checked` statement tells .NET to throw an exception when an overflow happens instead of allowing it to happen silently. To mute these you can use `unchecked` although rarely used.
+
+#### Test your knowledge
+
+Answer the following questions:
+1. What happens when you divide an int variable by 0? System.DivideByZeroException is raised
+2. What happens when you divide a double variable by 0? It returns infinity
+3. What happens when you overflow an int variable, that is, set it to a
+value beyond its range? It continues incrementing from the minimum value an int can hold
+4. What is the difference between x = y++; and x = ++y;? y++ will increment y after assigning it to x. Whereas, ++y increments y before assigning it to x.
+5. What is the difference between break, continue, and return when
+used inside a loop statement? Break stops the loop, continue continues in spite of a problem and return is used to exit the loop and return a value.
+6. What are the three parts of a for statement and which of them are
+required? Starting point, condition and limit. 
+7. What is the difference between the = and == operators? = assigns and == compares
+8. Does the following statement compile? for ( ; true; ) ; yes it created an infinite loop.
+9. What does the underscore _ represent in a switch expression? that's the default case
+10. What interface must an object implement to be enumerated over by using
+the foreach statement? System.Collections.Generic.IEnumberable<T>
+
+Exercise 3.2
+
+The code creates an endless loop as the byte overflows and restarts from its min value. Because a byte won't exceed 500 the loop never ends. To prevent this I've wrapped it in a `checked` statement so an OverflowException occurs.
