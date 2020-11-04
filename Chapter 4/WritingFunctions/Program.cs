@@ -96,6 +96,11 @@ namespace WritingFunctions
             }
         }
 
+        /// <summary>
+        /// Pass a 32-bit integer and it will be converted into its ordinal equivalent
+        /// </summary>
+        /// <param name="number">Number is a cardinal value e.g. 1, 2, 3 and so on </param>
+        /// <returns>Number as an ordinal value e.g. 1st, 2nd, 3rd, etc. </returns>
         static string CardinalToOriginal(int number)
         {
             switch (number)
@@ -127,6 +132,7 @@ namespace WritingFunctions
             }
         }
 
+
         static void RunCardinalToOriginal()
         {
             for (int number = 1; number <= 40; number++)
@@ -139,11 +145,55 @@ namespace WritingFunctions
             }
         }
 
+        /// <summary>
+        /// Pass a 32-bit integer and its factorial will be returned
+        /// </summary>
+        /// <param name="number">Number is a value e.g. 1, 2, 3 and so on </param>
+        /// <returns>Factorial of number</returns>
+        static int Factorial(int number)
+        {
+            if (number < 1)
+            {
+                return 0;
+            }
+            else if (number == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return number * Factorial(number - 1);
+            }
+        }
+
+        static void RunFactorial()
+        {
+            bool isNumber;
+            do
+            {
+                Write("Enter a number: ");
+                isNumber = int.TryParse(ReadLine(), out int number);
+
+                if (isNumber)
+                {
+                    WriteLine($"{number:N0} ! = {Factorial(number):N0}");
+                }
+                else
+                {
+                    WriteLine("You didn't enter a valid number");
+                }
+            }
+            while (isNumber);
+        }
+
         static void Main(string[] args)
         {
             // RunTimesTable();
             // RunCalculateTax();
+
             RunCardinalToOriginal();
+
+            RunFactorial();
         }
     }
 }
