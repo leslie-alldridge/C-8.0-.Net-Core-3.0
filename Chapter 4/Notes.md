@@ -34,3 +34,7 @@ When running with the Release configuration, only the Trace output is shown.You 
 | 2      | Warning | This will output errors and warnings               |
 | 3      | Info    | This will output errors, warnings, and information |
 | 4      | Verbose | This will output all levels                        |
+
+Microsoft has a proprietary unit testing framework known as MS Test; however, we will use the third-party framework xUnit.net.
+
+page 171...
