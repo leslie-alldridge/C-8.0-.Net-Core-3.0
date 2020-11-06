@@ -56,5 +56,3 @@ Cmd + F5, Shift + F5, and Ctrl or Cmd + Shift + F5? Debugging hotkeys (start, co
 test methods with? `[Fact]`
 9. What dotnet command executes xUnit tests? `dotnet test`
 10. What is TDD? Test Driven Development is a practice of writing unit tests before code
-
-page 175...
