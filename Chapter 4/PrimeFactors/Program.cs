@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace PrimeFactors
+namespace PrimeFactorsLib
 {
-    class Program
+    public class PrimeFactors
     {
-        static string PrimeFactors(int number)
+        public static string CalculatePrimeFactors(int number)
         {
             string result = string.Empty;
 
@@ -43,7 +43,7 @@ namespace PrimeFactors
             string userInput = Console.ReadLine();
             if (int.TryParse(userInput, out int userNumber))
             {
-                Console.Write(PrimeFactors(userNumber));
+                Console.Write(CalculatePrimeFactors(userNumber));
             }
             else
             {
