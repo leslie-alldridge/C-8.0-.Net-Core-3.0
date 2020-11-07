@@ -13,6 +13,8 @@ namespace PeopleApp
             bob.DateOfBirth = new DateTime(1954, 12, 22);
             bob.FavoriteAncientWonder = WondersOfTheAncientWorld.StatueOfZeusAtOlympia;
             bob.BucketList = (WondersOfTheAncientWorld)18;
+            bob.Children.Add(new Person { Name = "Alfred" });
+            bob.Children.Add(new Person { Name = "Suzie" });
 
             WriteLine(
                 format: "{0} was born on {1:dddd, d MMMM yyyy}",
@@ -28,6 +30,17 @@ namespace PeopleApp
             );
 
             WriteLine($"{bob.Name}'s bucket list is {bob.BucketList}");
+
+            WriteLine($"Bob has {bob.Children.Count} children.");
+            for (int child = 0; child < bob.Children.Count; child++)
+            {
+                WriteLine($"{bob.Children[child].Name}");
+            };
+
+            foreach (Person child in bob.Children)
+            {
+                WriteLine($"Saying hello to {child.Name}!");
+            };
 
             var alice = new Person
             {

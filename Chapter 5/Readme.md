@@ -70,3 +70,7 @@ Assume other programmers know that if inheritance is not specified, the class wi
 Explicitly apply one of the access modifiers to all type members, even if you want to use the implicit access modifier for members, which is private. Additionally, fields should usually be private or protected, and you should then create public properties to get or set the field values. This is because it controls access.
 
 An enum type is a very efficient way of storing one or more choices because, internally, it uses integer values in combination with a lookup table of string descriptions.
+
+Use the enum values to store combinations of discreet options. Derive an enum type from `byte` if there are up to eight options, from `short` if there are up to 16 options, from `int` if there are up to 32 options, and from `long` if there are up to 64 options.
+
+When using a List<T> the T is part of a feature called `generics` and creates a strongly typed array. The term `generics` means we can use a more specific static type (instead of system.object).
