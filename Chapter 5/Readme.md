@@ -85,3 +85,18 @@ When a parameter is passed into a method, it can be passed in one of three ways:
 • `By value` (this is the default): Think of these as being in-only.
 • `By reference` as a ref parameter: Think of these as being in-and-out.
 • `As an out parameter`: Think of these as being out-only.
+
+#### Exercise 5.1
+
+Answer the following questions:
+1. What are the six access modifiers and what do they do? Refer to the table above. Private, public, internal protected, private protected, protected, internal
+2. What is the difference between the static, const, and readonly keywords? const is used for constant values (ones that don't change), static members can be accessed with the name of its class, readonly is used for fields where you can only "get" the value
+3. What does a constructor do? Instantiates an instance of the class with rules you've defined (if any).
+4. Why should you apply the [Flags] attribute to an enum type when you want
+to store combined values? When you want to assign a bit number to each item within the enum. 
+5. Why is the partial keyword useful? Allows you to have one class with code split across files.
+6. What is a tuple? A collection of values e.g. ("leslie", 28)
+7. What does the C# ref keyword do? References the variable passed in to a method
+8. What does overloading mean? You can define multiple rules for a constructor / method by using overloading. Therefore users can input a different number of parameters and depending on which overload they hit, produce different results.
+9. What is the difference between a field and a property? A property contains the getter and setter methods (if any) and the field is private to a class and stores the actual data.
+10. How do you make a method parameter optional? You can use named parameters and set default values.
