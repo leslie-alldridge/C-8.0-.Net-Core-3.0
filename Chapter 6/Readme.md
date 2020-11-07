@@ -22,4 +22,18 @@ Events are often described as actions that happen to an object. .OnClick Button 
 
 If you have used languages that support function pointers, then think of a `delegate` as being a typesafe method pointer.
 
-page 223.
+Microsoft's convention for method names that handle events is `ObjectName_EventName`.
+
+For event delegate fields you'll want to use `public event EventHandler Shout` as the event keyword will enforce `+=` and `-=` operations for events. Using `=` will replace all methods.
+
+**Common Interfaces**
+
+| Interface       | Method                                          | Description                                                                                                     |
+| --------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| IComparable     | CompareTo(other)                                | This defines a comparison method that a type implements to order or sort its instances.                         |
+| IComparer       | Compare(first, second)                          | This defines a comparison method that a secondary type implements to order or sort instances of a primary type. |
+| IDisposable     | Dispose()                                       | This defines a disposal method to release unmanaged resources more efficiently than waiting for a finalizer.    |
+| IFormattable    | ToString(format, culture)                       | This defines a culture-aware method to format the value of an object into a string representation.              |
+| IFormatter      | Serialize(stream, object) & Deserialize(stream) | This defines methods to convert an object to and from a stream of bytes for storage or transfer.                |
+| IFormatProvider | GetFormat(type)                                 | This defines a method to format inputs based on a language and region.                                          |
+<hr/>
