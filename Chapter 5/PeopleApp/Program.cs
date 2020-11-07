@@ -42,6 +42,9 @@ namespace PeopleApp
                 WriteLine($"Saying hello to {child.Name}!");
             };
 
+            WriteLine($"{bob.Name} is a {Person.Species}");
+            WriteLine($"{bob.Name} was born on {bob.HomePlanet}");
+
             var alice = new Person
             {
                 Name = "Alice Jones",
@@ -72,6 +75,23 @@ namespace PeopleApp
             WriteLine(format: "{0} earned {1:C} interest.",
                 arg0: leslieAccount.AccountName,
                 arg1: leslieAccount.Balance * BankAccount.InterestRate
+            );
+
+            var blankPerson = new Person();
+            WriteLine(
+                format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
+                arg0: blankPerson.Name,
+                arg1: blankPerson.HomePlanet,
+                arg2: blankPerson.Instantiated
+            );
+
+            var gunny = new Person("Gunny", "Mars");
+
+            WriteLine(
+                format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
+                arg0: gunny.Name,
+                arg1: gunny.HomePlanet,
+                arg2: gunny.Instantiated
             );
         }
     }
