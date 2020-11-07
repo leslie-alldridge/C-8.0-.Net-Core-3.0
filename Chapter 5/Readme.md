@@ -81,4 +81,7 @@ When using constants you need to rebuild all assemblies that rely on them in ord
 
 Use read-only fields over the const fields for two important reasons: the value can be calculated or loaded at runtime and can be expressed using any executable statement. So, a readonly field can be set using a constructor or a field assignment. Every reference to the field is a live reference, so any future changes will be correctly reflected by calling code
 
-162...
+When a parameter is passed into a method, it can be passed in one of three ways:
+• `By value` (this is the default): Think of these as being in-only.
+• `By reference` as a ref parameter: Think of these as being in-and-out.
+• `As an out parameter`: Think of these as being out-only.

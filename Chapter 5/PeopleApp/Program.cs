@@ -93,6 +93,42 @@ namespace PeopleApp
                 arg1: gunny.HomePlanet,
                 arg2: gunny.Instantiated
             );
+
+            bob.WriteToConsole();
+            WriteLine(bob.GetOrigin());
+
+            (string, int) fruit = bob.GetFruit();
+            WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
+
+            var namedFruit = bob.GetNamedFruit();
+            WriteLine($"{namedFruit.Name} and {namedFruit.Number} exist");
+
+            var thing1 = ("Neville", 4);
+            WriteLine($"{thing1.Item1} has {thing1.Item2} children.");
+
+            var thing2 = (bob.Name, bob.Children.Count);
+            WriteLine($"{thing2.Name} has {thing2.Count} children."); // infers Name and Count as the named fields
+
+            // deconstructing tuples
+            (string fruitName, int fruitNumber) = bob.GetFruit();
+            WriteLine($"Deconstructed {fruitName}, {fruitNumber}");
+
+            WriteLine(bob.SayHello());
+            WriteLine(bob.SayHello("Leslie"));
+
+            WriteLine(bob.OptionalParams());
+            WriteLine(bob.OptionalParams(command: "Jump", number: 99));
+            WriteLine(bob.OptionalParams("Poke!", active: false));
+
+            int a = 10;
+            int b = 20;
+
+            WriteLine($"Before: a = {a}, b = {b}, c = doesn't exist");
+
+            bob.PassingParameters(a, ref b, out int c);
+
+            WriteLine($"After: a = {a}, b = {b}, c = {c}");
+
         }
     }
 }
