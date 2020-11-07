@@ -74,3 +74,5 @@ An enum type is a very efficient way of storing one or more choices because, int
 Use the enum values to store combinations of discreet options. Derive an enum type from `byte` if there are up to eight options, from `short` if there are up to 16 options, from `int` if there are up to 32 options, and from `long` if there are up to 64 options.
 
 When using a List<T> the T is part of a feature called `generics` and creates a strongly typed array. The term `generics` means we can use a more specific static type (instead of system.object).
+
+Sometimes, you want to define a field that only has one value that is shared across all instances. These are called `static` members.

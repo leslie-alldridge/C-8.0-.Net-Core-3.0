@@ -53,6 +53,26 @@ namespace PeopleApp
                 arg0: alice.Name,
                 arg1: alice.DateOfBirth
             );
+
+            // Bank Accounts
+            BankAccount.InterestRate = 0.012M; // storing a shared value
+            var jonesAccount = new BankAccount();
+            jonesAccount.AccountName = "Mrs. Jones";
+            jonesAccount.Balance = 2400;
+
+            WriteLine(format: "{0} earned {1:C} interest.",
+                arg0: jonesAccount.AccountName,
+                arg1: jonesAccount.Balance * BankAccount.InterestRate
+            );
+
+            var leslieAccount = new BankAccount();
+            leslieAccount.AccountName = "Mr. Alldridge";
+            leslieAccount.Balance = 100;
+
+            WriteLine(format: "{0} earned {1:C} interest.",
+                arg0: leslieAccount.AccountName,
+                arg1: leslieAccount.Balance * BankAccount.InterestRate
+            );
         }
     }
 }
