@@ -80,3 +80,5 @@ Sometimes, you want to define a field that only has one value that is shared acr
 When using constants you need to rebuild all assemblies that rely on them in order to get the latest value. A better choice for these fields (ones that shouldn't change) is to mark them as `read only`.
 
 Use read-only fields over the const fields for two important reasons: the value can be calculated or loaded at runtime and can be expressed using any executable statement. So, a readonly field can be set using a constructor or a field assignment. Every reference to the field is a live reference, so any future changes will be correctly reflected by calling code
+
+162...
