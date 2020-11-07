@@ -46,5 +46,24 @@ namespace Packt.Shared
             return Procreate(this, partner);
             // "this" means current instance of the class
         }
+
+        // method with a local function
+        public static int Factorial(int number)
+        {
+            if (number < 0)
+            {
+                throw new ArgumentException(
+                    $"{nameof(number)} cannot be less than zero."
+                );
+            }
+            return localFactorial(number);
+
+            // the local function
+            int localFactorial(int localNumber)
+            {
+                if (localNumber < 1) return 1;
+                return localNumber * localFactorial(localNumber - 1);
+            }
+        }
     }
 }
