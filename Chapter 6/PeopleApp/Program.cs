@@ -42,6 +42,28 @@ namespace PeopleApp
                 count++;
             }
             while (count < 4);
+
+            // Comparing objects when sorting
+
+            Person[] people = {
+                new Person {Name = "Simon"},
+                new Person {Name = "Jenny"},
+                new Person {Name = "Adam"},
+                new Person {Name = "Richard"},
+            };
+
+            WriteLine("Initial list of people:");
+            foreach (var person in people)
+            {
+                WriteLine($"{person.Name}");
+            }
+
+            WriteLine("User Person's IComparable implementation to sort:");
+            Array.Sort(people);
+            foreach (var person in people)
+            {
+                WriteLine($"{person.Name}");
+            }
         }
 
         private static void Harry_Shout(object sender, EventArgs e)

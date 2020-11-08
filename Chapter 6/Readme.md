@@ -47,3 +47,5 @@ For event delegate fields you'll want to use `public event EventHandler Shout` a
 | IFormatter      | Serialize(stream, object) & Deserialize(stream) | This defines methods to convert an object to and from a stream of bytes for storage or transfer.                |
 | IFormatProvider | GetFormat(type)                                 | This defines a method to format inputs based on a language and region.                                          |
 <hr/>
+
+If anyone will want to sort an array or collection of instances of your type, then implement the `IComparable` interface.
