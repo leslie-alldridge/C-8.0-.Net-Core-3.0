@@ -22,3 +22,4 @@ C# 8.0 &amp; .Net Core 3.0 – Modern Cross-Platform Development: Build applicat
     - [Logical Operators](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%203/LogicalOperators)
     - [Operators](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%203/Operators)
 * [Chapter 4 - Writing, Debugging, and Testing Functions](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%204)
+Chapter 5
