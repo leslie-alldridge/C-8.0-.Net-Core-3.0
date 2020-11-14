@@ -49,3 +49,5 @@ For event delegate fields you'll want to use `public event EventHandler Shout` a
 <hr/>
 
 If anyone will want to sort an array or collection of instances of your type, then implement the `IComparable` interface.
+
+Line 233:
