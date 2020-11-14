@@ -112,7 +112,7 @@ namespace PeopleApp
 
             WriteLine(john.ToString());
 
-            Employee aliceInEmployee = new Employee { Name = "Alice", EmployeeCode = "AA123" };
+            Employee aliceInEmployee = new Employee { Name = "Alice", EmployeeCode = "AA123", DateOfBirth = new DateTime(1970, 12, 12) };
             Person aliceInPerson = aliceInEmployee;
 
             aliceInEmployee.WriteToConsole();
@@ -140,6 +140,30 @@ namespace PeopleApp
                 // we can do something with aliceAsEmployee
                 WriteLine($"{nameof(aliceInPerson)} AS an Employee");
             }
+
+            try
+            {
+                aliceInEmployee.TimeTravel(new DateTime(1999, 12, 31));
+                aliceInEmployee.TimeTravel(new DateTime(1950, 12, 25));
+            }
+            catch (PersonException ex)
+            {
+                WriteLine(ex.Message);
+            }
+
+            string email1 = "leslie.alldridge@gmail.com";
+            string email2 = "ian&test.com";
+
+            WriteLine(
+                "{0} is a valid e-mail address: {1}",
+                arg0: email1,
+                arg1: StringExtensions.IsValidEmail(email1)
+            );
+            WriteLine(
+                "{0} is a valid e-mail address: {1}",
+                arg0: email2,
+                arg1: StringExtensions.IsValidEmail(email2)
+            );
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
