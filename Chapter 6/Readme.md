@@ -108,3 +108,5 @@ Use the `is` and `as` keywords to avoid throwing exceptions when casting between
 Unlike ordinary methods, constructors are not inherited so we must explicitly declare and call the base constructor implementations in `System.Exception` to make them available to programmers wanting to use them for custom exceptions. 
 
 When defining your own exceptions, give them the same three constructors that explicitly call the built-in ones.
+
+page 254
