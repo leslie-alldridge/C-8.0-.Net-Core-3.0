@@ -50,4 +50,10 @@ For event delegate fields you'll want to use `public event EventHandler Shout` a
 
 If anyone will want to sort an array or collection of instances of your type, then implement the `IComparable` interface.
 
-Line 233:
+When instantiating an instance of a generic type `<T>`, the developer
+must pass a type parameter. In this example, we pass int as the
+type parameter for gt1 and string as the type parameter for gt2,
+so wherever T appears in the GenericThing class, it is replaced with
+int and string.
+
+Thread culture defines how things display using the region and language of the machine it's running on
