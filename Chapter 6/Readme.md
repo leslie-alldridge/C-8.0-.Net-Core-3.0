@@ -101,3 +101,5 @@ You can use the `sealed` keyword to a method to prevent anyone from further over
 
 You have now seen two ways to change the behavior of an inherited method. We can hide it using the new keyword (known as non-polymorphic inheritance), or we can override it (known as polymorphic inheritance).
 
+Use the `is` and `as` keywords to avoid throwing exceptions when casting between derived types. If you don't do this, you must write try...catch statements for `InvalidCastException`.
+

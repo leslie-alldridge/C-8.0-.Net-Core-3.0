@@ -111,6 +111,35 @@ namespace PeopleApp
             WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
 
             WriteLine(john.ToString());
+
+            Employee aliceInEmployee = new Employee { Name = "Alice", EmployeeCode = "AA123" };
+            Person aliceInPerson = aliceInEmployee;
+
+            aliceInEmployee.WriteToConsole();
+            aliceInPerson.WriteToConsole();
+            WriteLine(aliceInEmployee.ToString());
+            WriteLine(aliceInPerson.ToString());
+
+            /*
+            When a method is overridden with virtual and override, the compiler is smart
+            enough to know that although the variable is declared as a Person class, the object
+            itself is an Employee class and, therefore, the Employee implementation of ToString
+            is called.
+            */
+
+            // Explicit casting (safely)
+            if (aliceInPerson is Employee)
+            {
+                WriteLine($"{nameof(aliceInPerson)} IS an Employee");
+                Employee explicitAlice = (Employee)aliceInPerson;
+            }
+            // can also use `as` keyword and check for null
+            Employee aliceAsEmployee = aliceInPerson as Employee;
+            if (aliceAsEmployee != null)
+            {
+                // we can do something with aliceAsEmployee
+                WriteLine($"{nameof(aliceInPerson)} AS an Employee");
+            }
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
