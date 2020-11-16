@@ -31,6 +31,7 @@ C# 8.0 &amp; .Net Core 3.0 – Modern Cross-Platform Development: Build applicat
 * [Chapter 5 - Building your own types with Object-Oriented Programming](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%205)
     - [PacktLibrary](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%205/PacktLibrary)
     - [Program](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%205/PeopleApp)
-* [Chapter 6 - Implementing Interfaces and Inheriting Classes](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%204)
+* [Chapter 6 - Implementing Interfaces and Inheriting Classes](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%206)
     - [PacktLibrary](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%206/PacktLibrary)
     - [Program](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%206/PeopleApp)
+* [Chapter 7 - Understanding and Packaging .NET Types](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%207)
