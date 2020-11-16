@@ -103,10 +103,24 @@ You have now seen two ways to change the behavior of an inherited method. We can
 
 Use the `is` and `as` keywords to avoid throwing exceptions when casting between derived types. If you don't do this, you must write try...catch statements for `InvalidCastException`.
 
-### Exceptions
+#### Exceptions
 
 Unlike ordinary methods, constructors are not inherited so we must explicitly declare and call the base constructor implementations in `System.Exception` to make them available to programmers wanting to use them for custom exceptions. 
 
 When defining your own exceptions, give them the same three constructors that explicitly call the built-in ones.
 
-page 254
+#### Exercise 6.1
+
+1. What is a delegate? Similar to a method pointer. Contains information about a method and can be passed as a parameter.
+2. What is an event? events notify another class when something of interest occurs. Raising class is called the publisher and classes receiving events are named subscriber.
+3. How are a base class and a derived class related? a derived class will be created from its base class
+4. What is the difference between is and as operators? `as` will do a nullable check where `is` will do a type check.
+5. Which keyword is used to prevent a class from being derived from,
+or a method from being further overridden? `sealed`
+6. Which keyword is used to prevent a class from being instantiated with the
+new keyword? `static`
+7. Which keyword is used to allow a member to be overridden? `virtual`
+8. What's the difference between a destructor and a deconstruct method? destructor removes the item from memory whereas a deconstructor will output class variables 
+9. What are the signatures of the constructors that all exceptions should
+have? They should contain signatures of `System.Exception` constructors as these are not inherited by default.
+10. What is an extension method and how do you define one? `obj.ExtensionMethod()` will allow our obj class to use the extended method `ExtensionMethod`
