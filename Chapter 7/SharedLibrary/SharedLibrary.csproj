@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>net5.0</TargetFramework>
+	  <PackageId>Packt.CS.Leslie.SharedLibrary</PackageId>
+	  <Authors>Leslie Alldridge</Authors>
+	  <PackageVersion>1.0.0</PackageVersion>
+	  <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
+	  <PackageProjectUrl>https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0</PackageProjectUrl>
+	  <Description>Extension methods to validate a string value</Description>
+	  <PackageIcon>packt-cs8-sharedlibrary.png</PackageIcon>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="packt-cs8-sharedlibrary.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
