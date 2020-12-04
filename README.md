@@ -35,3 +35,4 @@ C# 8.0 &amp; .Net Core 3.0 – Modern Cross-Platform Development: Build applicat
     - [PacktLibrary](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%206/PacktLibrary)
     - [Program](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%206/PeopleApp)
 * [Chapter 7 - Understanding and Packaging .NET Types](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%207)
+* [Chapter 8 - Working with Common .NET Types](https://github.com/leslie-alldridge/C-8.0-.Net-Core-3.0/tree/main/Chapter%208)
