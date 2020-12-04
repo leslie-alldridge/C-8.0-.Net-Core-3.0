@@ -68,3 +68,4 @@ Queues are good when you want to implement the first-in, first-out (FIFO) behavi
 Sets are a good choice when you want to perform set operations between two collections. For example, you may have two collections of city names, 
 and you want to know which names appear in both sets (known as the intersect between the sets). Items in a set must be unique.
 
+up to page 306 pdf
