@@ -19,6 +19,36 @@ namespace WorkingWithText
             {
                 WriteLine(cityName);
             };
+
+            string fullName = "Alan Jones";
+
+            int indexOfTheSpace = fullName.IndexOf(' ');
+
+            string firstName = fullName.Substring(startIndex: 0, length: indexOfTheSpace);
+
+            string lastName = fullName.Substring(startIndex: indexOfTheSpace + 1);
+
+            WriteLine($"{lastName}, {firstName}");
+
+            // Optional extra - change output to Alan Jones
+
+            string result = "Jones, Alan";
+
+            int resultIndex = result.IndexOf(',');
+
+            string firstNameResult = result.Substring(resultIndex + 2);
+
+            string lastNameResult = result.Substring(0, resultIndex);
+
+            WriteLine($"{firstNameResult} {lastNameResult}");
+
+            // checking string for content
+            string company = "Microsoft";
+
+            bool startsWithM = company.StartsWith("M");
+            bool containsN = company.Contains("N");
+
+            WriteLine($"Starts with M: {startsWithM}, contains an N {containsN}");
         }
     }
 }
