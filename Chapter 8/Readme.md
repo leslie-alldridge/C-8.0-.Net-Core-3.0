@@ -103,3 +103,5 @@ Internationalization is the process of enabling your code to run correctly all o
 8. In a regular expression, what does $ mean? End of input
 9. In a regular expression, how could you represent digits? `[0-9]`
 10. Why should you not use the official standard for email addresses to create a regular expression to validate a user's email address? You can use `System.Net.Mail.MailAddress` to do that for you. E.g. `MailAddress m = new MailAddress(emailaddress);`
+
+page 324... exercise 8.2 regex
