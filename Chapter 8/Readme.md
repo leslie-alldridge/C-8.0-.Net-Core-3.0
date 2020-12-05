@@ -73,3 +73,20 @@ and you want to know which names appear in both sets (known as the intersect bet
 Using Immutable collections: `using System.Collections.Immutable;`
 
 To safely allow multiple threads to work with those objects knowing they won't change, you should make them immutable.
+
+<b>Reflection</b> is a programming feature that allows code to understand and manipulate itself. An assembly is made up of up to four parts:
+- Assembly metadata and manifest: Name, assembly, and file version, referenced assemblies, and so on.
+- Type metadata: Information about the types, their members, and so on.
+- IL code: Implementation of methods, properties, constructors, and so on.
+- Embedded Resources (optional): Images, strings, JavaScript, and so on.
+
+When updating a NuGet package, you should specify an optional flag to make sure that you only upgrade to the highest minor to avoid breaking changes, or to the highest patch if you are extra cautious and only want to receive bug fixes, as shown in the following commands:
+
+- Major: Breaking changes.
+- Minor: Non-breaking changes, including new features and bug fixes.
+- Patch: Non-breaking bug fixes.
+
+`Update-Package Newtonsoft.Json -ToHighestMinor`
+`Update-Package EPiServer.Cms -ToHighestPatch`
+
+page 318
