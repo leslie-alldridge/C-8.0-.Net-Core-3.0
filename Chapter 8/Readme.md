@@ -89,4 +89,5 @@ When updating a NuGet package, you should specify an optional flag to make sure 
 `Update-Package Newtonsoft.Json -ToHighestMinor`
 `Update-Package EPiServer.Cms -ToHighestPatch`
 
-page 318
+Internationalization is the process of enabling your code to run correctly all over the world. It has two parts: globalization and localization.
+
