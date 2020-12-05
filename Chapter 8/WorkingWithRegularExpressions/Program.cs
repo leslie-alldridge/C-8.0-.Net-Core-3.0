@@ -1,6 +1,7 @@
 ﻿using System;
 using static System.Console;
 using System.Text.RegularExpressions;
+using System.Net.Mail;
 
 namespace WorkingWithRegularExpressions
 {
@@ -38,6 +39,28 @@ namespace WorkingWithRegularExpressions
             foreach (Match film in filmsSmart)
             {
                 WriteLine(film.Groups[2].Value);
+            }
+
+            var email = "leslie.alldridge@test.com";
+            var brokenEmail = "heya";
+
+            var result = EmailIsValid(email);
+            var failResult = EmailIsValid(brokenEmail);
+            WriteLine($"result: {result}, second result: {failResult}");
+        }
+
+        static bool EmailIsValid(string email)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(email);
+                WriteLine(m);
+                return true;
+            }
+            catch (FormatException)
+            {
+                WriteLine("Invalid Format");
+                return false;
             }
         }
     }

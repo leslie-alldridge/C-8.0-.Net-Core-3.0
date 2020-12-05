@@ -91,3 +91,15 @@ When updating a NuGet package, you should specify an optional flag to make sure 
 
 Internationalization is the process of enabling your code to run correctly all over the world. It has two parts: globalization and localization.
 
+#### Exercise 8.1
+
+1. What is the maximum number of characters that can be stored in a string variable? Several billion, but it depends on the .NET CLR memory limit and the machine hosting the code.
+2. When and why should you use a SecureString class? Represents text that should be kept confidential, such as by deleting it from computer memory when no longer needed.
+3. When is it appropriate to use a StringBuilder type? Instead of using `+` or `concat()` you can use a `StringBuilder`
+4. When should you use a `LinkedList<T>` class? It's a doubly linked class, great for adding or removing many items from the start / end of the list.
+5. When should you use a `SortedDictionary<T>` class rather than a `SortedList<T>` class? SortedList can retrieve items by index and uses less memory. SortedDictionary retrieves item by key and has faster insertion and removal operations - but uses more memory.
+6. What is the ISO culture code for Welsh? `cy-GB`
+7. What is the difference between localization, globalization, and internationalization? Localization is more about the language so that button labels make sense. Globalization is about writing code in a way that it can accommodate multiples languages and regions. Internationalization is the process of enabling code to run correctly all over the world.
+8. In a regular expression, what does $ mean? End of input
+9. In a regular expression, how could you represent digits? `[0-9]`
+10. Why should you not use the official standard for email addresses to create a regular expression to validate a user's email address? You can use `System.Net.Mail.MailAddress` to do that for you. E.g. `MailAddress m = new MailAddress(emailaddress);`
